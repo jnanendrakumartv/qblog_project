@@ -2,7 +2,7 @@
 .main{
   background-color: rgb(34, 35, 36);
   width: 100%;
-  height: 50px;
+  height: 70px;
   padding: 5px;
 }
 #signupbutton{
@@ -37,5 +37,11 @@
 }
 .signupdashboard{
   background-color: rgb(145, 221, 235);
+}
+.row footer{
+  background-color: rgb(34, 35, 36);
+  width: 100%;
+  height: 70px;
+   
 }
 
