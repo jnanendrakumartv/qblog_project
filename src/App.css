@@ -1,33 +1,38 @@
-.App {
-  text-align: center;
+
+.main{
+  background-color: rgb(34, 35, 36);
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+}
+#signupbutton{
+ border-color: green; 
+ color: green;
+ background-color: rgb(34, 35, 36);
+}
+#signinbutton{
+  margin: 10px;
+  color: green;
+  border-color: green; 
+  background-color: rgb(34, 35, 36);
+}
+.HomePagefooter{
+  background-color: rgb(34, 35, 36);
+  width: 100%;
+  height: 70px;
+  color: chocolate;
+  font-size: 11px;
+}
+.homepagedashblog{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(145, 221, 235);
+}
+.createblogbutton{
+  background-color: rgb(242, 187, 48);
+  color: aliceblue;
+}
+.text{
+  color:rgb(77, 164, 176);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
