@@ -22,7 +22,20 @@ class SignUp extends Component{
     <div className="signupdashboard">
         <div className="row">
         <div className="col-lg-6 col-xs-6 col-sm-6 col-md-6"><img src={blog} alt={"blog"} height="250" width="300"></img></div>
-        <div className="col-lg-6 col-xs-6 col-sm-6 col-md-6"></div>
+        <div className="col-lg-6 col-xs-6 col-sm-6 col-md-6">
+            <h2>Sign Up</h2> <br/>
+            <label>First Name</label> <br/>
+            <input placeholder="first name"></input><br/>
+            <label>Last Name</label> <br/>
+            <input placeholder="last name"></input><br/>
+            <label>Email</label> <br/>
+            <input placeholder="email"></input><br/>
+            <label>Password</label> <br/>
+            <input placeholder="password"></input><br/>
+            <label>ConformPassword</label> <br/>
+            <input placeholder="conform password"></input><br/>
+            <button>Submit</button> <label>Already Have an Account</label>
+        </div>
 
         </div>
 
