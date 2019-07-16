@@ -5,33 +5,40 @@
   height: 90px;
   padding: 5px;
 }
-/* #signupbutton{
+ #signupbutton{
  border-color: green; 
  color: green;
  background-color: rgb(34, 35, 36);
+ width: 30%;
+  border-radius: 20px;
 }
 #signinbutton{
-  margin: 10px;
-  color: green;
   border-color: green; 
-  background-color: rgb(34, 35, 36);
-}
+ color: green;
+ background-color: rgb(34, 35, 36);
+ width: 30%;
+  border-radius: 20px;
+}*/
 .HomePagefooter{
   background-color: rgb(34, 35, 36);
   width: 100%;
   height: 70px;
   color: chocolate;
   font-size: 11px;
-} */
-/* .homepagedashblog{
+} 
+.homepagedashblog{
   width: 100%;
   height: 500px;
   background-color: rgb(145, 221, 235);
-} */
-/* .createblogbutton{
-  background-color: rgb(242, 187, 48);
-  color: aliceblue;
-} */
+}
+.createblogbutton{
+  background-color: goldenrod;
+  width: 60%;
+  border-radius: 20px;
+  border:solid 1px rgb(229, 237, 241);
+  font-size: 20px;
+  margin-left: 30px;
+}
 /* .text{
   color:rgb(77, 164, 176);
 } */

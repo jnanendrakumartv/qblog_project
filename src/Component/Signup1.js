@@ -8,6 +8,13 @@ import browserHistory from "../Utils/browserHistory"
 
 
 class Signup1 extends Component{
+    constructor(props){
+        super(props);
+        this.state={ firstname:'',lastname:'',email:'',password:'', conformpassword:'',
+        firstnameA:'',lastnameA:'',email:'',pwd:'',array:[],
+       
+        }
+    }
     handleSubmit1=(event)=> {
         browserHistory.push("/signup");
     }
@@ -22,7 +29,7 @@ class Signup1 extends Component{
                <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"> </div>
                <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7"></div>
                <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button className="signupbutton" onClick={this.handleSubmit1}>SignUp</button></div>
-               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button className="signinbutton"onClick={this.handleSubmit}>SignIn</button></div>
+               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button className="signinbutton" onClick={this.handleSubmit}>SignIn</button></div>
                <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
                </div>
                <div className="Signupdashboard">
@@ -38,21 +45,20 @@ class Signup1 extends Component{
                       <div className="rowsignup">
                       <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
                       <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                          <h3 className="signuptext">Sign Up</h3>
-                          <label className="label">Name</label><br/>
-                          <input className="input_box " placeholder="Name.."></input><br/>
-                          {/* <label className="label">Last Name</label><br/>
-                          <input className="input_box " placeholder="lasst name.."></input><br/> */}
+                          <h2 className="signuptext">Sign Up</h2>
+                          <label className="label">First name</label><br/>
+                          <input className="input_box " placeholder="Last Name.." name='firstname'></input><br/>
+                          <label className="label">Last Name</label><br/>
+                          <input className="input_box " name='lastname' placeholder="Last name.."></input><br/>
                           <label className="label">Email</label><br/>
-                          <input className="input_box " placeholder="email."></input><br/>
+                          <input className="input_box " name='email' placeholder="email."></input><br/>
                           <label className="label">Password</label><br/>
                           <input className="input_box " placeholder="password."></input><br/>
                           <label className="label">ConformPassword</label><br/>
                           <input className="input_box " placeholder="conform password."></input><br/>
-                          <button className="submitbutton">Submit</button><label className="allareadyaccount">Already have an Account</label>
+                          <button className="submitbutton">Submit</button><label className="allareadyaccount" onClick={this.handleSubmit}>Already have an Account</label>
                       </div>
                       <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-
                       </div>
                   </div>
                   </div>

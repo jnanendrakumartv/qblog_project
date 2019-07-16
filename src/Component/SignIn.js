@@ -13,6 +13,9 @@ class SignIn extends Component{
     handleSubmit=(event)=>{
         browserHistory.push("/signin")
     }
+    handleSubmit2=(event)=>{
+        browserHistory.push("/dash")
+    }
     render(){
         return(
            <div className="main">
@@ -42,7 +45,7 @@ class SignIn extends Component{
                           <input className="input_box " placeholder="Email....."></input><br/>
                           <label className="label">Password</label><br/>
                           <input className="input_box " placeholder="Password...."></input><br/>
-                          <button className="submitbutton">Submit</button>
+                          <button className="submitbutton" onClick={this.handleSubmit2}>Submit</button>
                       </div>
                       <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
                       </div>

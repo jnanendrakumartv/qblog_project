@@ -19,18 +19,20 @@ padding-top: 50px;
     color: white;
     font-weight: bold;
     font-family: sans-serif;
-
     border : solid 0px rgb(53, 28, 237); 
     border-radius: 10px;
     padding-left: 10px;
 }
+/* .input_box:hover{
+    background-color:rgb(234, 230, 240);
+} */
 .label{
-    color: red;
+    color:rgb(104, 8, 163);
     font-weight: bold;
     font-family: sans-serif;
 }
 .signintext{
-    color: red;
+    color: rgb(104, 8, 163);
     font-weight: bold;
     font-family: sans-serif;
     text-align: center;
