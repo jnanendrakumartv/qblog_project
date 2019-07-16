@@ -1,0 +1,45 @@
+.rowsignup{
+padding-top: 50px;
+}
+.Signupdashboard{
+    background: url(../images/q1.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(157, 221, 224); */
+    height: 500px;
+}
+.image{
+    padding-top: 50px;
+}
+.input_box {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    background:rgba(0, 0, 0, 0.638);
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+
+    border : solid 0px rgb(53, 28, 237); 
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.label{
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.signintext{
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+.submitbutton{
+    background-color: goldenrod;
+    width: 40%;
+    border-radius: 20px;
+    border:solid 1px rgb(229, 237, 241);
+    font-size: 20px;
+}
