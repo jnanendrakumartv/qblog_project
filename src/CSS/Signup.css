@@ -1,23 +1,27 @@
 .Signupdashboard{
-    background: url(../images/body.jpg);
+    /* background: url(../images/body.jpg); */
+    border: 5px solid rgba(0, 0, 0, 0.3);
     background-size: cover;
-    background-position: center;
-    /* background-color: rgb(157, 221, 224); */
-    height: 690px;
+    
+    background-color: rgb(157, 221, 224);
+    height: 650px;
+    width: 100%;
 }
 .image{
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    margin-top: 30px;
+    /* border: 20px solid rgba(0, 0, 0, 0.3); */
 }
 .input_box {
     width: 100%;
     margin-bottom: 10px;
     height: 40px;
-    background:rgba(0, 0, 0, 0.638);
-    color: white;
+    /* background:rgba(0, 0, 0, 0.638); */
+    /* color: white; */
     font-weight: bold;
     font-family: sans-serif;
     border : solid 0px rgb(53, 28, 237); 
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding-left: 10px;
 }
 /* .label{
@@ -26,7 +30,7 @@
     font-family: sans-serif;
 } */
 .signuptext{
-    color:rgb(104, 8, 163);
+    color:black;
     font-weight: bold;
     font-family: sans-serif;
     text-align: center;
@@ -34,9 +38,9 @@
 }
 .submitbutton{
     background-color: goldenrod;
-    color: rgb(104, 8, 163);
+    color: white;
     width: 40%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     border:solid 1px rgb(229, 237, 241);
     font-size: 20px;
     background-color: transparent;
@@ -45,13 +49,21 @@
 .submitbutton:hover{
     color: aliceblue;
     background-color: rgb(11, 214, 214);
+    
 }
 .allareadyaccount{
-    color:rgb(1, 11, 89);
+    color:black;
     font-weight: bold;
     font-family: sans-serif;
     text-align: center;
     padding-left: 20px;
+}
+.allareadyaccount:hover{
+    color: crimson;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgb(11, 214, 214);
+    border-radius: 20px;
 }
 .footer{
     background-color: rgb(34, 35, 36);
@@ -64,6 +76,15 @@
 .logo{
     margin-left: 50px;
 }
-p{
+.red{
     color: red;
 }
+#icon{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  /* #signupbox{
+    border: 20px solid rgba(0, 0, 0, 0.3);
+     
+  } */
+  

@@ -1,19 +1,23 @@
 import * as ActionTypes from '../Actions/types';
-import browserHistory from '../Utils/browserHistory'; 
+import browserHistory from '../utils/browserHistory'; 
 
 
-const intialState = {
+var intialState = {
    loginmsg:'',
    regmsg:''
 };
+
 export default(state=intialState,action)=>{
+    debugger
     switch(action.type){
 
         case ActionTypes.LOGIN:{
             return{...state,loginmsg:'Login successfull'}
+                
         }
         case ActionTypes.REG:{
             return{...state,regmsg:'Register successfull'}
+console.log(this.state.loginmsg)
         }
         
         default: 

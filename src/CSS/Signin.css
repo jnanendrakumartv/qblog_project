@@ -2,11 +2,11 @@
 padding-top: 50px;
 }
 .Signupdashboard{
-    background: url(../images/body.jpg);
+    /* background: url(../images/body.jpg); */
     background-size: cover;
     background-position: center;
-    /* background-color: rgb(157, 221, 224); */
-    height: 690px;
+    background-color: rgb(157, 221, 224);
+    height: 680px;
 }
 .image{
     padding-top: 50px;
@@ -15,24 +15,24 @@ padding-top: 50px;
     width: 100%;
     margin-bottom: 10px;
     height: 40px;
-    background:rgba(0, 0, 0, 0.638);
-    color: white;
+    /* background:rgba(0, 0, 0, 0.638); */
+    /* color: white; */
     font-weight: bold;
     font-family: sans-serif;
     border : solid 0px rgb(53, 28, 237); 
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding-left: 10px;
 }
 /* .input_box:hover{
     background-color:rgb(234, 230, 240);
 } */
 .label{
-    color:rgb(104, 8, 163);
+    color:black;
     font-weight: bold;
     font-family: sans-serif;
 }
 .signintext{
-    color: rgb(104, 8, 163);
+    color: black;
     font-weight: bold;
     font-family: sans-serif;
     text-align: center;
@@ -44,6 +44,11 @@ padding-top: 50px;
     border-radius: 20px;
     border:solid 1px rgb(229, 237, 241);
     font-size: 20px;
+    transition: all 0.5s;
+  cursor: pointer;
+  content: '\00bb';
+  position: absolute;
+  position: relative;overflow: hidden;
 }
 .footer{
     background-color: rgb(34, 35, 36);
@@ -59,3 +64,8 @@ padding-top: 50px;
 #logo1{
     margin-left: 30px;
 }
+#icon{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  

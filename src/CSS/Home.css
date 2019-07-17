@@ -41,16 +41,18 @@
     color: rgb(8, 87, 20);
     border:solid 2px rgb(8, 87, 20);
     font-size: 15px;
-    background-color: rgb(161, 161, 166);
-    width: 110px;
+    background-color: rgb(31, 32, 33);
+    border-radius: 5px solid;
+    width: 90px;
     margin: 10px;
 }
 .signinbutton{
     color: rgb(8, 87, 20);
     border:solid 2px rgb(8, 87, 20);
     font-size: 15px;
-    background-color: rgb(161, 161, 166);
-    width: 110px;
+    background-color:rgb(31, 32, 33);
+    border-radius: 5px solid;
+    width: 90px;
     margin: 10px; 
 }
 .signupbutton:hover{
@@ -65,3 +67,11 @@
     margin-left: 30px;
    
 } */
+#icon{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  #q{
+      color: aliceblue;
+  }
+  
