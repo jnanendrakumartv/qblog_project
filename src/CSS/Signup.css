@@ -39,14 +39,14 @@
     background-color: goldenrod;
     color: white;
     width: 40%;
-    /* border-radius: 20px; */
-    border:solid 1px rgb(229, 237, 241);
+    border-radius: 3px;
+    border: 1px;
     font-size: 20px;
-    background-color: transparent;
+    /* background-color: transparent; */
 
 }
 .submitbutton:hover{
-    color: aliceblue;
+    /* color: aliceblue; */
     background-color: rgb(11, 214, 214);
     
 }
@@ -77,6 +77,8 @@
 }
 .red{
     color: red;
+    font-family: bold;
+    font-size: 20px;
 }
 #icon{
     margin-top: 15px;

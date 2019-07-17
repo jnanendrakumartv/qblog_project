@@ -39,7 +39,7 @@ class SignIn extends Component{
     // }
     signin=()=>{
         let reg_mail=/^[a-z0-9._%+-]+@[a-z.-]+\.[a-z]{2,4}$/;
-        let reg_pwd=/^[@][A-Za-z0-9]{6,13}$/;
+        let reg_pwd=/^[@#*&_%$][A-Za-z0-9]{6,13}$/;
         let emaill=this.state.email.length, pwdl=this.state.password.length;
         let temp=0;
         
@@ -56,8 +56,9 @@ class SignIn extends Component{
             this.setState({pwd:''});
         }
         if(temp>1){ 
-            browserHistory.push('dash');
+            
             this.props.LOGIN();
+            browserHistory.push('/dash');
         }
     }
     render(){
@@ -133,7 +134,11 @@ class SignIn extends Component{
                 </div>
            </div>
         );
-    }
-    
+    }    
 }
-export default SignIn;
+const mapStateToprops=(state)=>{
+    const {loginmsg}=state.Register_reducer;
+    const {regmsg}=state.Register_reducer;
+    return {loginmsg,regmsg};
+};
+export default connect(mapStateToprops, {LOGIN}) (SignIn);

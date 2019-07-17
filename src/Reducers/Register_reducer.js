@@ -1,5 +1,5 @@
 import * as ActionTypes from '../Actions/types';
-import browserHistory from '../utils/browserHistory'; 
+import browserHistory from '../Utils/browserHistory'; 
 
 
 var intialState = {
@@ -8,7 +8,7 @@ var intialState = {
 };
 
 export default(state=intialState,action)=>{
-    debugger
+    debugger;
     switch(action.type){
 
         case ActionTypes.LOGIN:{
@@ -17,7 +17,7 @@ export default(state=intialState,action)=>{
         }
         case ActionTypes.REG:{
             return{...state,regmsg:'Register successfull'}
-console.log(this.state.loginmsg)
+            console.log(this.state.loginmsg);
         }
         
         default: 

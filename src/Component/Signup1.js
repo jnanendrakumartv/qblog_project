@@ -34,13 +34,14 @@ class Signup1 extends Component{
     handleSubmit3=(event)=>{
         browserHistory.push("/signin")
     }
+
     handleChange=(event)=>{
         this.setState({[event.target.name]:event.target.value});
     }
     handleSubmit=(event)=>{
         debugger;
         
-        let t=0;
+        let temp=0;
         let reqobj={
             firstname1:this.state.firstname,
             lastname1:this.state.lastname,
@@ -53,41 +54,40 @@ class Signup1 extends Component{
         let reg_fname=/^[A-Za-z]{4,12}$/;
         let reg_lname=/^[A-Za-z]{4,12}$/;
         let reg_mail=/^[a-z0-9._%+-]+@[a-z.-]+\.[a-z]{2,4}$/;
-        let reg_pwd=/^[@][A-Za-z0-9]{6,13}$/;
+        let reg_pwd=/^[@#*&_%$][A-Za-z0-9]{6,13}$/;
        
         if(fnamel===0) this.setState({fname:'Firstname is required'});
         else if(!reg_fname.test(this.state.firstname)) this.setState({fname:'Invalid Firstname'});
         else{
-             t++;
+             temp++;
              this.setState({fname:''});
         }
            
         if(lnamel===0) this.setState({lname:'Lastname is required'});
         else if(!reg_lname.test(this.state.lastname)) this.setState({lname:'Invalid Lastname'}); 
         else {
-            t++;
+            temp++;
             this.setState({lname:''});
         }
         
         if(emaill===0) this.setState({mail:'Email is required'});
         else if(!reg_mail.test(this.state.email)) this.setState({mail:'Invalid email'});
-        else { t++;
+        else { temp++;
             this.setState({mail:''})
         }
         if(pwdl===0) this.setState({pwd:'Password is required'});
-        else if(!reg_pwd.test(this.state.password)) this.setState({pwd:'Invalid Password'});
+        else if(!reg_pwd.test(this.state.password)) this.setState({pwd:'Password should contains @ # $ % _ *'});
         else {
-            t++;
+            temp++;
             this.setState({pwd:''});
         }
         
-        if(t>3) {
+        if(temp>1) {
             this.props.REG();
-            browserHistory.push('/');
+            browserHistory.push('/signin');
             
         }
     }  
-    
     render(){
         return(
            <div className="main">
@@ -112,22 +112,23 @@ class Signup1 extends Component{
                       <div  className="rowsignup">
                       <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
                       <div id="signupbox" className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                          <h2 className="signuptext">Sign Up</h2>
+                          <h1 className="signuptext"><b>Sign Up</b></h1>
                           <label className="label">First name</label><br/>
-                          <input className="input_box " placeholder="Last Name.." type='text' name='firstname' onChange={this.handleChange}></input><br/>
+                          <input className="input_box " placeholder="First Name" type='text' name='firstname' onChange={this.handleChange}></input><br/>
                           <p className='red'>{this.state.fname}</p>
                           <label className="label">Last Name</label><br/>
-                          <input className="input_box " placeholder="Last name."  type='text' name='lastname' onChange={this.handleChange}></input><br/>
+                          <input className="input_box " placeholder="Last name"  type='text' name='lastname' onChange={this.handleChange}></input><br/>
                           <p className='red'>{this.state.lname}</p>
                           <label className="label">Email</label><br/>
-                          <input className="input_box " placeholder="email." type='text' name='email' onChange={this.handleChange}></input><br/>
+                          <input className="input_box " placeholder="email" type='text' name='email' onChange={this.handleChange}></input><br/>
                           <p className='red'>{this.state.mail}</p>
                           <label className="label">Password</label><br/>
-                          <input className="input_box " placeholder="password." type='password' name='password' onChange={this.handleChange}></input><br/>
+                          <input className="input_box " placeholder="password" type='password' name='password' onChange={this.handleChange}></input><br/>
                           <p className='red'>{this.state.pwd}</p>
                           {/* <label className="label">ConformPassword</label><br/>
                           <input className="input_box " placeholder="conform password."></input><br/> */}
                           <button className="submitbutton" onClick={this.handleSubmit}>Submit</button><label className="allareadyaccount" onClick={this.handleSubmit3}>Already have an Account</label>
+                      
                       </div>
                       <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
                       </div>
@@ -169,5 +170,9 @@ class Signup1 extends Component{
            </div>
         );
     }
-}
-export default Signup1;
+};
+const mapStateToprops=(state)=>{
+    const {regmsg}=state.Register_reducer;
+    return {regmsg};
+};
+export default connect(mapStateToprops, {REG}) (Signup1);
