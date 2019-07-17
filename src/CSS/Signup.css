@@ -1,9 +1,8 @@
 .Signupdashboard{
     /* background: url(../images/body.jpg); */
-    border: 5px solid rgba(0, 0, 0, 0.3);
+    /* border: 5px solid rgba(0, 0, 0, 0.3); */
     background-size: cover;
-    
-    background-color: rgb(157, 221, 224);
+    /* background-color: rgb(157, 221, 224); */
     height: 650px;
     width: 100%;
 }
@@ -62,7 +61,7 @@
     color: crimson;
     font-weight: bold;
     font-family: sans-serif;
-    background-color: rgb(11, 214, 214);
+    /* background-color: rgb(11, 214, 214); */
     border-radius: 20px;
 }
 .footer{

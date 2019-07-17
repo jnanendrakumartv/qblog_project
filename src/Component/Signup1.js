@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-import {LOGIN} from '../Actions/Action';
 import {REG} from '../Actions/Action';
 import Real from '../images/Real.png';
 import qblg from '../images/qblg.jpg';
@@ -82,7 +81,7 @@ class Signup1 extends Component{
             this.setState({pwd:''});
         }
         
-        if(t=0) {
+        if(t>3) {
             this.props.REG();
             browserHistory.push('/');
             
